@@ -119,8 +119,11 @@
                                                                 <real key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="btnSelectionTapped:" destination="9UU-ih-7Vg" eventType="touchUpInside" id="9lm-hr-Oay"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIg-Tz-M8M" customClass="RoundedButton" customModule="RSP_Game" customModuleProvider="target">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIg-Tz-M8M" customClass="RoundedButton" customModule="RSP_Game" customModuleProvider="target">
                                                         <rect key="frame" x="116" y="0.0" width="100" height="100"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="J74-dt-B8X"/>
@@ -136,8 +139,11 @@
                                                                 <real key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="btnSelectionTapped:" destination="9UU-ih-7Vg" eventType="touchUpInside" id="YNB-Wy-2Ul"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evz-NU-oXr" customClass="RoundedButton" customModule="RSP_Game" customModuleProvider="target">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evz-NU-oXr" customClass="RoundedButton" customModule="RSP_Game" customModuleProvider="target">
                                                         <rect key="frame" x="232" y="0.0" width="100" height="100"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="FlT-ah-34R"/>
@@ -153,6 +159,9 @@
                                                                 <real key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="btnSelectionTapped:" destination="9UU-ih-7Vg" eventType="touchUpInside" id="Skm-m5-52v"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -163,15 +172,38 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZx-wA-pVS">
+                                <rect key="frame" x="157" y="617" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="mid-zz-bII"/>
+                                    <constraint firstAttribute="height" constant="30" id="wPC-7Y-Pam"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.99999994039999995" green="0.4650368587" blue="0.46087920170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnResetTapped:" destination="9UU-ih-7Vg" eventType="touchUpInside" id="Kmx-4N-aPm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="zZx-wA-pVS" firstAttribute="centerX" secondItem="EgZ-bB-fOw" secondAttribute="centerX" id="3JP-ah-ogI"/>
                             <constraint firstItem="6qQ-wc-dDZ" firstAttribute="leading" secondItem="EgZ-bB-fOw" secondAttribute="leading" constant="16" id="NBZ-Wn-Ile"/>
                             <constraint firstItem="c6H-5v-0ne" firstAttribute="trailing" secondItem="6qQ-wc-dDZ" secondAttribute="trailing" constant="16" id="RQZ-JP-KHL"/>
+                            <constraint firstItem="c6H-5v-0ne" firstAttribute="bottom" secondItem="zZx-wA-pVS" secondAttribute="bottom" constant="20" id="b3x-mN-mpG"/>
                             <constraint firstItem="6qQ-wc-dDZ" firstAttribute="centerY" secondItem="EgZ-bB-fOw" secondAttribute="centerY" id="yOH-cY-7NQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c6H-5v-0ne"/>
                     </view>
+                    <connections>
+                        <outlet property="ivComputerSelection" destination="b4f-2s-a3b" id="eeZ-GZ-vAn"/>
+                        <outlet property="ivUserSelection" destination="gXF-PX-wot" id="43y-0j-dVX"/>
+                        <outlet property="lblComputerScore" destination="ty4-JX-1HK" id="6ON-kO-Alh"/>
+                        <outlet property="lblResultMessage" destination="zVn-Lq-9sK" id="i7K-8h-itB"/>
+                        <outlet property="lblUserScore" destination="ARH-Ko-54g" id="DTj-hQ-ro7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMl-8p-WPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
