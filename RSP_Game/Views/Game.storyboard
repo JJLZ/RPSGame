@@ -198,8 +198,9 @@
                         <viewLayoutGuide key="safeArea" id="c6H-5v-0ne"/>
                     </view>
                     <connections>
+                        <outlet property="btnReset" destination="zZx-wA-pVS" id="slh-0D-Oia"/>
                         <outlet property="ivComputerSelection" destination="b4f-2s-a3b" id="eeZ-GZ-vAn"/>
-                        <outlet property="ivUserSelection" destination="gXF-PX-wot" id="43y-0j-dVX"/>
+                        <outlet property="ivUserSelection" destination="my9-Sk-5qD" id="WQn-Hj-gEe"/>
                         <outlet property="lblComputerScore" destination="ty4-JX-1HK" id="6ON-kO-Alh"/>
                         <outlet property="lblResultMessage" destination="zVn-Lq-9sK" id="i7K-8h-itB"/>
                         <outlet property="lblUserScore" destination="ARH-Ko-54g" id="DTj-hQ-ro7"/>

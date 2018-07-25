@@ -14,6 +14,8 @@
 		88FF63282107B51100F14BA1 /* RSP_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF63272107B51100F14BA1 /* RSP_GameTests.swift */; };
 		88FF63352107B5E600F14BA1 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FF63342107B5E600F14BA1 /* Game.storyboard */; };
 		88FF63372107D1BE00F14BA1 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF63362107D1B200F14BA1 /* RoundedButton.swift */; };
+		88FF633E2107E05D00F14BA1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF633D2107E05D00F14BA1 /* Game.swift */; };
+		88FF63402108114C00F14BA1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF633F2108114C00F14BA1 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		88FF63292107B51100F14BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88FF63342107B5E600F14BA1 /* Game.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		88FF63362107D1B200F14BA1 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		88FF633D2107E05D00F14BA1 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		88FF633F2108114C00F14BA1 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 		88FF633A2107D2BA00F14BA1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				88FF633D2107E05D00F14BA1 /* Game.swift */,
+				88FF633F2108114C00F14BA1 /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -240,8 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88FF633E2107E05D00F14BA1 /* Game.swift in Sources */,
 				88FF63152107B51000F14BA1 /* ViewController.swift in Sources */,
 				88FF63372107D1BE00F14BA1 /* RoundedButton.swift in Sources */,
+				88FF63402108114C00F14BA1 /* Player.swift in Sources */,
 				88FF63132107B51000F14BA1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
